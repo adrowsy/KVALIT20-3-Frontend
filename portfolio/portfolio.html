@@ -1,0 +1,121 @@
+<!--
+    1B. Portfolio (spara filen som portfolio.html)
+    x Presentera några av dina tidigare projekt i en tabell.
+    x Lägg till några skärmbilder på dina projekt.
+    x Spara bilderna i mappen images.
+    x Skapa en länk till din GitHub-sida.
+    x Länken måste öppnas i en ny flik.
+
+    2. Navigering:
+    x Länk till alla sidor högst upp
+    
+    3. Skapa en sidfot
+    x Sidfoten ska visas längst ner på alla sidor.
+    x Lägg till en horisontell linje (hr)
+    x Skriv följande text efter linjen: Copyright @ 2020 – DITT NAMN – DIN E-POST
+    
+    4. Validering: 
+    https://validator.w3.org/nu/#file
+    "Document checking completed. No errors or warnings to show." 2020-11-27
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend > Uppgift 1 > Portfolio</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">Start</a> -
+        <a href="portfolio.html">Portfolio</a> - 
+        <a href="contact.html">Kontakt</a>
+    </p>
+    <h1>Portfolio</h1>
+    <p><a href="https://github.com/adrowsy" target="_blank">GitHub: adrowsy (öppnas i nytt fönster)</a></p>
+
+    <!-- tidigare projekt presenterade i tabell -->
+    <table>
+        <caption>Mina senaste projekt</caption>
+
+        <thead>
+            <tr>
+                <th>Projekt</th>
+                <th>Skärmbild</th>
+                <th>Beskrivning</th>
+                <th>Summering</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td><img src="images/notebook.png" alt="Bild från exekvering av programmet"></td>
+                <td><p>Notebook är en att göra-lista inspirerad av anteckningsmetoden Bullet Journal. Programmet låter en användare importera uppgifter (notes) från textfil och spara till en objektarray (notebook). Användaren kan läsa notebook och markera en punkt som klar.</p></td>
+                <td><ul>
+                    <li>Programmeringsspråk: Java</li>
+                    <li>Innehåller tre klasser och 14 metoder inkl. main</li>
+                    <li>Klasserna är smarta och säkra genom instansmetoder och privata instansvariabler</li>
+                    <li>Inlämningsuppgift i kursen <abbr title="Objektorienterad programmering">OOP</abbr>, Nackademin</li>
+                    <li>Validerar indata och hanterar felaktiga inmatningar</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Summering av tärningskast</td>
+                <td><img src="images/dicethrows.png" alt="Bild från exekvering av programmet"></td>
+                <td><p>Applikationen presenterar resultatet från 1&nbsp;000 tärningskast. Det sker med hjälp av tre metoder:</p>
+                    <ol>
+                        <li><cite>Dice.createFile</cite> skapar och returnerar en textfil med 1&nbsp;000 slumpvärden mellan 1&nbsp;och&nbsp;6.</li>
+                        <li><cite>Dice.createArray</cite> skapar och returnerar en heltalsarray med värden från <cite>createFile</cite>.</li>
+                        <li><cite>Dice.analyseArray</cite> räknar och sorterar resultatet från <cite>CreateArray</cite> och returnerar antal 1:or, 2:or, 3:or osv.</li>
+                    </ol></td>
+                <td><ul>
+                    <li>Programmeringsspråk: Java</li>
+                    <li>Innehåller två klasser och 4 metoder inkl. main</li>
+                    <li>Inlämningsuppgift i kursen <abbr title="Objektorienterad programmering">OOP</abbr>, Nackademin</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Tillgänglighetstestning</td>
+                <td><img src="images/a11y.png" width="800" alt="Diagram över allvarsrad per krav"></td>
+                <td><p>Som eget projektarbete gjorde jag en tillgänglighetstestning av ett kommunalt webbdiarium. 
+                    
+                    Kriterierna för testningen baserades på lagen om tillgänglighet till digital offentlig service med särskilt fokus på dokument (.pdf) som distribueras via webbplatsen. Lagen gäller sedan 1 januari 2019 för alla offentliga webbplatser inom EU. Omfattningen har anpassas efter de tidsgränser då olika delar av webbtillgänlighetsdirektivet ska vara uppfyllda.
+                    </p>
+
+                <td><ul>
+                    <li>Tillgänglighetstestning, 20 timmar</li>
+                    <li>Kvalitetsegenskaper: capability, reliability och usability begränsat till riktlinjerna
+                        <ul>
+                            <li><a href="https://webbriktlinjer.se/riktlinjer/115- " target=_blank title="Beskriv med text allt innehåll som inte är text">WCAG 1.1.1 (A)</a></li>
+                            <li><a href="https://webbriktlinjer.se/riktlinjer/122-" target=_blank title="Presentera innehållet i en meningsfull ordning för alla">WCAG 1.3.2 (A)</a></li>
+                            <li><a href="https://webbriktlinjer.se/riktlinjer/121-" target=_blank title="Ange i kod vad sidans olika delar har för roll">WCAG 1.3.1 (A)</a></li>
+                            <li><a href="https://webbriktlinjer.se/riktlinjer/153-" target=_blank title="Se till att allt innehåll presenteras rätt oavsett skärmens riktning">WCAG 1.3.4 (A)</a></li>
+                        </ul>
+                    </li>
+                    <li>Användningssituationer kopplade till nedsatt färgseende och koginitiv nedsättning samt tillgänglighetsprincipen "begriplig"
+                    <li>Exkluderat: Övriga delar av webbplatsen, innehåll publicerat före 1 september 2020, övriga kvalitetsegenskaper (charisma, security, scalability, compatability, performance, installability och development), MacOS, mobilwebbläsare etc.
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Systemtestning av webbshop</td>
+                <td><img src="images/grupparbete-grund.png" width="800" alt="Tabell över avvikelser som inte rättats"></td>
+                <td><p>System-, regressions-, och omtestning av webbshop. Testuppdrag i utbildningssyfte där jag tillsammans med två kurskamrater fick i uppdrag att testa en valfri webshop. 
+                    Uppdraget skulle genomföras enligt den testprocess som gåtts igenom under kursen inkl. alla leverabler. Uppdraget bestod av fyra delmoment: analys av uppdraget, val av tekniker och design av testfall, genomförande av testning inkl. om- och regressionstestning och rapportering. 
+                    </p>
+
+                <td><ul>
+                    <li>Systemtestning, 170 timmar (tre personer)</li>
+                    <li>Kvalitetsegenskaper: Capability, Reliability, Compatibility</li>
+                    <li>Funktioner: Sök, Visa produkter, Filtrera produkter, Varukorg, Utveckling</li>
+                    <li>Testas i Chrome och Firefox på PC</li>
+                    <li>Exkluderat: Övriga funktioner (betalning etc.), egenskaperna Charisma, Security, Scalability, Installability, Development, Performance och Usability</li> 
+                </ul></td>
+            </tr>
+        </tbody>
+    </table>
+
+        <!-- sidfot -->
+        <hr>
+        <p>Copyright &copy; 2020 - A. Rengfelt - annikarengfelt@gmail.com</p>
+</body>
+</html>
