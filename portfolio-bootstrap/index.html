@@ -1,0 +1,258 @@
+<!--
+1.  Skapa en personlig portfolio med hjälp av Bootstrap
+    - Använd en valfri Bootstrap-template från https://startbootstrap.com
+2.  Nedanstående måste presenteras i din portfolio
+    - Ditt namn ska visas högst upp på alla sidor.
+        (Gäller om du väljer en template som har undersidor)
+    - En responsiv bild på dig.
+        (Bildens storlek ska vara tillräcklig stor och måste anpassas till olika enheter)
+    -   Lite text om dig själv.
+        (Minst ett stycke med valfri formatering)
+    - Några av dina tidigare projekt med skärmbilder.
+    - Dina kontaktuppgifter (Mobil, E-post, Adress)
+    - Ett kontaktformulär (Namn, E-post och Meddelande)
+3.  Validera alla HTML-filer med W3C Validator
+    - https://validator.w3.org/
+REDOVISAS: 
+    - Skapa en komprimerad mapp (ZIP) och ladda upp uppgiften till studentportalen.
+    - Spara filen som
+        KVALIT20-Frontend-Uppgift-02-G-DITT-NAMN-Version-XX.zip
+    - Deadline: 2020-12-18 kl. 12.00 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>Frontend > Uppgift 2: Bare - Start Bootstrap Template</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Additional CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <!-- Just for the build -->
+    <style>
+      div {border: 0px dotted #dedede; padding: 0.3em}
+    </style>
+
+  </head>
+  
+  <body>
+  
+    <!-- Navigation -->
+    <!-- orginal <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Annika Rengfelt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Recent work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Page Content -->
+    <div class="container">
+      
+      <!-- Recent work -->
+      <div class="row">
+        <div class="col-12">
+          <h1 id="work">Recent work</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores distinctio vel deleniti corrupti ullam magni? Voluptatibus perferendis atque odio. Cumque qui similique soluta quam expedita quo assumenda explicabo voluptates?</p>
+        </div>
+
+        <!-- Work sample -->
+        <div class="row work">
+          <div class="col-12">
+            <h2>Project name</h2>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <img src="img/notebook.png" alt="Still image from running program" class="img-fluid">
+          </div>
+          <div class="col-lg-4 cols-sm-12">
+            <div>
+              <p class="lead">Description</p><!-- About 20 words -->
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, dolore recusandae quod pariatur, eligendi cum accusantium ad harum quisquam.</p>
+            </div>
+            <div>
+              <p>In summary</p>
+             <ul> <!-- 5 bullets max -->
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of work sample -->
+
+        <!-- Work sample -->
+        <div class="row work">
+          <div class="col-12">
+            <h2>Project name</h2>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <img src="img/dicethrows.png" alt="Still image from running program" class="img-fluid">
+          </div>
+          <div class="col-lg-4 cols-sm-12">
+            <div>
+              <p class="lead">Description</p><!-- About 20 words -->
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, dolore recusandae quod pariatur, eligendi cum accusantium ad harum quisquam.</p>
+            </div>
+            <div>
+              <p>In summary</p>
+             <ul> <!-- 5 bullets max -->
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of work sample -->
+        
+        <!-- Work sample -->
+        <div class="row work">
+          <div class="col-12">
+            <h2>Accessibillity testing</h2>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img src="img/a11y.png" alt="Diagram showing severity per claim" class="img-fluid">
+          </div>
+          <div class="col-lg-6 cols-md-12">
+            <div>
+              <p class="lead">Test object: Swedish municipal web diary</p><!-- About 20 words -->
+              <p>Accessibillity testing based on the Act on Accessibility to Digital Public Services with a special focus on documents (.pdf) distributed via the website. The law has been in force since 1 January 2019 for all public websites in the EU. The scope has been adapted to the time limits when different parts of the Web Accessibility Directive must be met.</p>
+            </div>
+            <div>
+              <p>In summary</p>
+             <ul> <!-- 5 bullets max -->
+               <li>Individual project, 20 hours</li>
+               <li>Focusing on capability, reliability och usability limited to WCAG A-levels 1.1.1, 1.3.2, 1.3.1 and 1.3.4</li>
+               <!-- TODO: Link WCAG-rules -->
+               <li>Deliverables: STP, STD, STC, STCR, STR, SDR, STS</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of work sample -->
+
+        <!-- Work sample -->
+        <div class="row work">
+          <div class="col-12">
+            <h2>System testing</h2>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img src="img/grupparbete-grund.png" alt="Table of remaining deviations" class="img-fluid">
+          </div>
+          <div class="col-lg-6 cols-md-12">
+            <div>
+              <p class="lead">Test object: Fashion e-commerce site</p><!-- About 20 words -->
+              <p>Student assignment involving system, regression and re-testing of e-commerce site to be carried out according to the test process (analysis, design, execution and report) learned throughout the course.</p>
+            </div>
+            <div>
+              <p>In summary</p>
+             <ul> <!-- 5 bullets max -->
+               <li>Group project, 170 hours in total</li>
+               <li>Focusing on capability, reliability and compatibility for functions of search and filter products, shopping cart and check out</li>
+               <li>Deliverables: STP, STD&nbsp;x&nbsp;2, STC&nbsp;x&nbsp;2, STCR&nbsp;x&nbsp;2, STR&nbsp;x&nbsp;2, SDR, STS</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of work sample -->
+
+      </div>
+      <!-- End of recent work -->
+
+
+      <!-- About me -->
+      <div class="row">
+        <div class="col-12">
+          <h1 id="about">About</h1>
+          <p class="lead">Annika Rengfelt, born in cold winter 1986, lives in Sundbyberg, Stockholm.</p>
+          <p>I've loved the internet since I was twelve and learned HTML from a book. I think my first website was about horses.</p>
+          <p>Now training to be a specialist in testing and quality assurance. Especially interested in simplicity and availability since I believe that available content is better for everyone and that all people should be able to enjoy great services.</p>
+          <p>Proficient in Word, Excel and PowerPoint.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Professional experience</h3>
+          <ul>
+            <li><mark>InsureSec</mark> a company offering licensing and regulatory services to Swedish insurance brokers</li>
+            <li>E-commerce marketplace <mark>Groupon</mark> Sweden</li>
+            <li>Sales rep @ Statoil gas station (now Circle K) where I learned tons about providing efficient and excellent service to many types of people (who haven't visited a gas station, right?)</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Education</h3>
+				<ul>
+				  <li><abbr title="Higher Vocational Education">HVE</abbr> programme for <mark>software testing and quality assurance</mark> @ Nackademin</li>
+				  <li>Bachelor programme in <mark>social anthropology</mark> @ Stockholm University</li>
+				  <li>Courses in <mark>philosohy</mark> @ Södertörns högskola</li>
+				  <li>Two-year education in <mark>printmaking arts</mark> @ Grafikskolan (College of Printmaking Arts)</li>
+				</ul>
+        </div>
+      </div>
+      <!-- End of About me-->
+
+      <!-- Contact -->
+      <div class="row"> 
+        <div class="col-12">
+          <form action="#">
+            <h2 id="contact">Contact</h2>
+            <p class="alert alert-secondary" role="alert">Feel free to contact me for work opportunities or discussions about how to make digital content even better.</p>
+        </div>
+        <div class="col-md-4 form-group">
+          <div class="form-group">
+            <label for="namn">Name</label>
+            <input type="text" class="form-control" name="namn" placeholder="First and last name">
+          </div>
+          <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" name="e-post" placeholder="E-postadress">
+            </div>
+        </div>
+        <div class="col-md-8 form-group">
+          <label for="message">Message:</label>
+          <textarea name="message" class="form-control" maxlength="280" placeholder="Hi! ..." rows="5" required=""></textarea></p>
+          <input class="btn btn-primary" type="submit" value="Send" style="float: right;">
+        </div>
+      </form>
+      </div>
+      <!-- End of contact -->
+    </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+</html>  
