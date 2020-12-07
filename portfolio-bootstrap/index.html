@@ -1,35 +1,10 @@
-<!--
-1.  Skapa en personlig portfolio med hjälp av Bootstrap
-    - Använd en valfri Bootstrap-template från https://startbootstrap.com
-2.  Nedanstående måste presenteras i din portfolio
-    - Ditt namn ska visas högst upp på alla sidor.
-        (Gäller om du väljer en template som har undersidor)
-    - En responsiv bild på dig.
-        (Bildens storlek ska vara tillräcklig stor och måste anpassas till olika enheter)
-    -   Lite text om dig själv.
-        (Minst ett stycke med valfri formatering)
-    - Några av dina tidigare projekt med skärmbilder.
-    - Dina kontaktuppgifter (Mobil, E-post, Adress)
-    - Ett kontaktformulär (Namn, E-post och Meddelande)
-3.  Validera alla HTML-filer med W3C Validator
-    - https://validator.w3.org/
-REDOVISAS: 
-    - Skapa en komprimerad mapp (ZIP) och ladda upp uppgiften till studentportalen.
-    - Spara filen som
-        KVALIT20-Frontend-Uppgift-02-G-DITT-NAMN-Version-XX.zip
-    - Deadline: 2020-12-18 kl. 12.00 
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-  
+    <meta name="description" content="School assignment">
+    <meta name="author" content="Annika Rengfelt">
     <title>Frontend > Uppgift 2: Bare - Start Bootstrap Template</title>
   
     <!-- Bootstrap core CSS -->
@@ -38,19 +13,11 @@ REDOVISAS:
     <!-- Additional CSS -->
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-
-    <!-- Just for the build -->
-    <style>
-      div {border: 0px dotted #dedede; padding: 0.3em}
-    </style>
-
   </head>
   
   <body>
-  
     <!-- Navigation -->
-    <!-- orginal <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">-->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Annika Rengfelt</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,120 +25,132 @@ REDOVISAS:
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Recent work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">Who is Annika?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#school">School assignments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-  
-    <!-- Page Content -->
-    <div class="container">
-      
-      <!-- Recent work -->
+    
+    <div class="legend bg-water">
+
+      <!-- Content -->
+      <div class="container">
+        
+        <!-- About me -->
+        <div class="row">
+          <div class="col-12">
+            <h1 id="about">Who is Annika?</h1>
+          </div>
+
+            <div class="col-lg-6">
+            <p class="lead">Annika Rengfelt, born in cold winter 1986, lives in Sundbyberg, Stockholm.</p>
+            <p>I've loved the internet since I was twelve and learned HTML from a book. I think my first website was about horses.</p>
+            <p>Now training to be a specialist in testing and quality assurance. Especially interested in simplicity and availability since I believe that available content is better for everyone and that all people should be able to enjoy great services.</p>
+            <p>Proficient in Word, Excel and PowerPoint.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="img/20190621_annika.jpg" class="rounded img-fluid" alt="Annika standing on a beach, looking into the camera">
+          </div>
+
+          <div class="col-md-6">
+            <h2>Professional experience</h2>
+            <ul>
+              <li><mark>InsureSec</mark> a company offering licensing and regulatory services to Swedish insurance brokers</li>
+              <li>E-commerce marketplace <mark>Groupon</mark> Sweden</li>
+              <li>Sales rep @ Statoil gas station (now Circle K) where I learned tons about providing efficient and excellent service to many types of people (who haven't visited a gas station, right?)</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h2>Education</h2>
+            <ul>
+              <li><abbr title="Higher Vocational Education">HVE</abbr> programme for <mark>software testing and quality assurance</mark> @ Nackademin</li>
+              <li>Bachelor programme in <mark>social anthropology</mark> @ Stockholm University</li>
+              <li>Courses in <mark>philosohy</mark> @ Södertörns högskola</li>
+              <li>Two-year education in <mark>printmaking arts</mark> @ Grafikskolan (College of Printmaking Arts)</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+        
+    <!-- School assignment -->
+    <div class="row">
+      <div class="col-12">
+        <h1 id="school">School assignments</h1>
+        <p>Samples shown below are, if not otherwise stated, results from school assignments. </p>
+      </div>
+    </div>
+    
+      <!-- Work sample -->
       <div class="row">
         <div class="col-12">
-          <h1 id="work">Recent work</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores distinctio vel deleniti corrupti ullam magni? Voluptatibus perferendis atque odio. Cumque qui similique soluta quam expedita quo assumenda explicabo voluptates?</p>
+          <h2>Java application: Notebook</h2>
         </div>
+        <div class="col-lg-6 col-sm-12">
+          <img src="img/notebook.png" alt="Still image from running program" class="img-fluid img-border">
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <!-- About 20 words -->
+          <p>A to do-list inspired by the Bullet Journal method. Allows the user to import notes from file and save data to an object array. User can read the notebook and change note type to completed.</p>
+          <ul> <!-- 5 bullets max -->
+            <li>3 classes and 14 methods</li>
+            <li>Private instance variables, using instance methods</li>
+            <li>Error handling and data validation</li>
+          </ul>
+        </div>
+      </div>
 
-        <!-- Work sample -->
-        <div class="row work">
-          <div class="col-12">
-            <h2>Project name</h2>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <img src="img/notebook.png" alt="Still image from running program" class="img-fluid">
-          </div>
-          <div class="col-lg-4 cols-sm-12">
-            <div>
-              <p class="lead">Description</p><!-- About 20 words -->
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, dolore recusandae quod pariatur, eligendi cum accusantium ad harum quisquam.</p>
-            </div>
-            <div>
-              <p>In summary</p>
-             <ul> <!-- 5 bullets max -->
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-             </ul>
-            </div>
-          </div>
+      <!-- Work sample -->
+      <div class="row">
+        <div class="col-12">
+          <h2>Java application: Dice</h2>
         </div>
-        <!-- End of work sample -->
-
-        <!-- Work sample -->
-        <div class="row work">
-          <div class="col-12">
-            <h2>Project name</h2>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <img src="img/dicethrows.png" alt="Still image from running program" class="img-fluid">
-          </div>
-          <div class="col-lg-4 cols-sm-12">
-            <div>
-              <p class="lead">Description</p><!-- About 20 words -->
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, dolore recusandae quod pariatur, eligendi cum accusantium ad harum quisquam.</p>
-            </div>
-            <div>
-              <p>In summary</p>
-             <ul> <!-- 5 bullets max -->
-               <li></li>
-               <li></li>
-               <li></li>
-               <li></li>
-             </ul>
-            </div>
-          </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="img/dicethrows.png" alt="Still image from running program" class="img-fluid img-border">
         </div>
-        <!-- End of work sample -->
+        <div class="col-lg-6 col-md-12">
+        <!-- About 20 words -->
+        <p>Presents the result from 1&nbsp;000 dice rolls using three methods:</p>
+        <ul> <!-- 5 bullets max -->
+          <li><b>createFile()</b> returns a file with 1&nbsp;000 random values 1 to 6</li>
+          <li><b>creatArray()</b> returns an int array with file values</li>
+          <li><b>analyseArray()</b> count and sort int array, returning number of 1s, 2s, 3s, etc.</li>
+        </ul>
+       </div>
+      </div>
         
-        <!-- Work sample -->
-        <div class="row work">
-          <div class="col-12">
-            <h2>Accessibillity testing</h2>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <img src="img/a11y.png" alt="Diagram showing severity per claim" class="img-fluid">
-          </div>
-          <div class="col-lg-6 cols-md-12">
-            <div>
-              <p class="lead">Test object: Swedish municipal web diary</p><!-- About 20 words -->
-              <p>Accessibillity testing based on the Act on Accessibility to Digital Public Services with a special focus on documents (.pdf) distributed via the website. The law has been in force since 1 January 2019 for all public websites in the EU. The scope has been adapted to the time limits when different parts of the Web Accessibility Directive must be met.</p>
-            </div>
-            <div>
-              <p>In summary</p>
-             <ul> <!-- 5 bullets max -->
-               <li>Individual project, 20 hours</li>
-               <li>Focusing on capability, reliability och usability limited to WCAG A-levels 1.1.1, 1.3.2, 1.3.1 and 1.3.4</li>
-               <!-- TODO: Link WCAG-rules -->
-               <li>Deliverables: STP, STD, STC, STCR, STR, SDR, STS</li>
-             </ul>
-            </div>
+      <!-- Work sample -->
+      <div class="row">
+        <div class="col-12">
+          <h2>Accessibillity testing</h2>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="img/a11y.png" alt="Diagram showing severity per claim" class="img-fluid img-border">
+        </div>
+        <div class="col-lg-6 cols-md-12">
+          <p class="lead">Test object: Swedish municipal web diary</p><!-- About 20 words -->
+          <p>Accessibillity testing based on the Act on Accessibility to Digital Public Services with a special focus on documents (.pdf) distributed via the website. The law has been in force since 1 January 2019 for all public websites in the EU. The scope has been adapted to the time limits when different parts of the Web Accessibility Directive must be met.</p>
+          <ul> <!-- 5 bullets max -->
+            <li>Individual project, 20 hours</li>
+            <li>Focusing on capability, reliability och usability limited to WCAG A-levels 1.1.1, 1.3.2, 1.3.1 and 1.3.4</li>
+            <!-- TODO: Link WCAG-rules -->
+            <li>Deliverables: STP, STD, STC, STCR, STR, SDR, STS</li>
+          </ul>
           </div>
         </div>
-        <!-- End of work sample -->
 
         <!-- Work sample -->
-        <div class="row work">
+        <div class="row">
           <div class="col-12">
             <h2>System testing</h2>
           </div>
           <div class="col-lg-6 col-md-12">
-            <img src="img/grupparbete-grund.png" alt="Table of remaining deviations" class="img-fluid">
+            <img src="img/grupparbete-grund.png" alt="Table of remaining deviations" class="img-fluid img-border">
           </div>
           <div class="col-lg-6 cols-md-12">
             <div>
@@ -179,7 +158,6 @@ REDOVISAS:
               <p>Student assignment involving system, regression and re-testing of e-commerce site to be carried out according to the test process (analysis, design, execution and report) learned throughout the course.</p>
             </div>
             <div>
-              <p>In summary</p>
              <ul> <!-- 5 bullets max -->
                <li>Group project, 170 hours in total</li>
                <li>Focusing on capability, reliability and compatibility for functions of search and filter products, shopping cart and check out</li>
@@ -187,68 +165,84 @@ REDOVISAS:
              </ul>
             </div>
           </div>
-        </div>
-        <!-- End of work sample -->
-
-      </div>
+        </div> <!-- End of work sample -->
       <!-- End of recent work -->
+      </div>
 
+<div class="legend bg-water">
+  <div class="container" style="padding-bottom: 4rem;"> 
+  <!-- Contact -->
+  <div class="row"> <!-- Contact information -->
+    <div class="col-12">
+    <h1 id="contact">Contact</h1>
+    </div>
+    <div class="col-lg-8">
+      <p>Feel free to contact me for work opportunities or discussions about how to make digital content even better.</p>
+      <p>You can reach me through mail, e-mail, phone or using the form below.</p>
+    </div>
+    <div class="col-lg-4"> <!-- Address information -->
+      <div class="alert alert-secondary" role="alert">
+        <address>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg>
+        Svalgränd 5, 172&nbsp;36&nbsp;Sundbyberg<br>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-inbound" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+        +46&nbsp;(0)&nbsp;73&#8209;391&nbsp;67&nbsp;41<br>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-at" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/></svg>
+        annikarengfelt@gmail.com</address>
+    </div>
+  </div>
+</div>
 
-      <!-- About me -->
-      <div class="row">
-        <div class="col-12">
-          <h1 id="about">About</h1>
-          <p class="lead">Annika Rengfelt, born in cold winter 1986, lives in Sundbyberg, Stockholm.</p>
-          <p>I've loved the internet since I was twelve and learned HTML from a book. I think my first website was about horses.</p>
-          <p>Now training to be a specialist in testing and quality assurance. Especially interested in simplicity and availability since I believe that available content is better for everyone and that all people should be able to enjoy great services.</p>
-          <p>Proficient in Word, Excel and PowerPoint.</p>
+    <form>
+      <div class="form-row">
+        <div class="col form-group">
+          <label for="name">Your name</label>
+          <input type="text" class="form-control" placeholder="" id="name">
         </div>
-        <div class="col-md-6">
-          <h3>Professional experience</h3>
-          <ul>
-            <li><mark>InsureSec</mark> a company offering licensing and regulatory services to Swedish insurance brokers</li>
-            <li>E-commerce marketplace <mark>Groupon</mark> Sweden</li>
-            <li>Sales rep @ Statoil gas station (now Circle K) where I learned tons about providing efficient and excellent service to many types of people (who haven't visited a gas station, right?)</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3>Education</h3>
-				<ul>
-				  <li><abbr title="Higher Vocational Education">HVE</abbr> programme for <mark>software testing and quality assurance</mark> @ Nackademin</li>
-				  <li>Bachelor programme in <mark>social anthropology</mark> @ Stockholm University</li>
-				  <li>Courses in <mark>philosohy</mark> @ Södertörns högskola</li>
-				  <li>Two-year education in <mark>printmaking arts</mark> @ Grafikskolan (College of Printmaking Arts)</li>
-				</ul>
+        <div class="col">
+          <label for="email">Your e-mail</label>
+          <input type="email" class="form-control" placeholder="" id="email">
         </div>
       </div>
-      <!-- End of About me-->
-
-      <!-- Contact -->
-      <div class="row"> 
-        <div class="col-12">
-          <form action="#">
-            <h2 id="contact">Contact</h2>
-            <p class="alert alert-secondary" role="alert">Feel free to contact me for work opportunities or discussions about how to make digital content even better.</p>
-        </div>
-        <div class="col-md-4 form-group">
-          <div class="form-group">
-            <label for="namn">Name</label>
-            <input type="text" class="form-control" name="namn" placeholder="First and last name">
-          </div>
-          <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" class="form-control" name="e-post" placeholder="E-postadress">
-            </div>
-        </div>
-        <div class="col-md-8 form-group">
-          <label for="message">Message:</label>
-          <textarea name="message" class="form-control" maxlength="280" placeholder="Hi! ..." rows="5" required=""></textarea></p>
+      <div class="form-row">
+        <div class="col">
+          <label for="message">Your message</label>
+          <textarea name="message" id="message" class="form-control" maxlength="280" placeholder="Hi!"  rows="3" required></textarea>
+          <br>
           <input class="btn btn-primary" type="submit" value="Send" style="float: right;">
         </div>
-      </form>
       </div>
-      <!-- End of contact -->
-    </div>
+    </form>
+  </div>
+</div>
+
+    <footer class="bg-light"><!-- Footer -->
+      <div class="container" style="padding-bottom: 4rem;">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="text-center">Attributions and acknowledgements</p>
+            <p class="small">
+              Bootstrap <a href="https://startbootstrap.com/template/bare" target="_blank" title="Bare template">Bare  template</a> (v.&nbsp;4.2.3) from <a href="https://startbootstrap.com/" target="_blank" title="Start Bootstrap">Start Bootstrap</a>
+              | Social media icons by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> @ <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a>
+              | <a href="https://coolors.co/" target="_blank">Coolors</a> is a great tool for making color schemes
+              | The <a href="https://commons.wikimedia.org/wiki/File:Down_the_Rabbit_Hole.png" target="_blank">White Rabbit illustration</a> was made by late <a href="https://en.wikipedia.org/wiki/John_Tenniel" target="_blank">John Tenniel</a> and is public domain
+              | Favicon made with <a href="https://favicon.io/favicon-generator/" target="_blank">favicon.io</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p class="text-center">Further down the rabbit hole</p>
+            <p class="text-center">
+              <a href="https://www.linkedin.com/in/annika-88831949/" target="_blank"  title="Open LinkedIn in new tab" role="button" class="btn btn-outline-dark mb-2"><img src="img/linkedin.svg" alt="LinkedIn icon" class="navbar-toggler-icon"> LinkedIn</a>
+              <a href="https://github.com/adrowsy" target="_blank" title="Open GitHub in new tab" role="button" class="btn btn-outline-dark mb-2"><img src="img/github.svg" alt="GitHub icon" class="navbar-toggler-icon"> GitHub</a>
+            </p>
+
+            <p class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Down_the_Rabbit_Hole.png/160px-Down_the_Rabbit_Hole.png" alt="The White Rabbit from Alice in Wonderland" title="The White Rabbit">
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
